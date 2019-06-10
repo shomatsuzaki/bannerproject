@@ -13,7 +13,6 @@ body {
     background-color: #402C7F;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
-    font-size: 40px;
     text-align: center;
     /*-------------------*/
     margin: 0 auto;
@@ -47,17 +46,54 @@ body {
 	height: 100%;
 }
 
-#flexbox {
-	width: 50%;
-}
-
 #banner {
 	display: block;
 	margin: 50px auto;
 	fill: #F5BBAD;
-
 }
 
-#counter {
-	font-size: 30px;
+/*----------------------------------*/
+/* MEDIA QUERIES                    */
+/*----------------------------------*/
+
+@media only screen and (min-width: 100px) {
+	body {
+		font-size: 20px;
+	}
+	#flexbox {
+		width: 100%;
+	}
+	#counter {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	#flexbox {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 36px;
+	}
+	#flexbox {
+		width: 80%;
+	}
+	#counter {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	body {
+		font-size: 40px;
+	}
+	#flexbox {
+		width: 55%;
+	}
+	#counter {
+		font-size: 30px;
+	}
 }
